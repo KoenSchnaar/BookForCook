@@ -1,0 +1,23 @@
+﻿@model List<BookForCook.Models.ReceptModel>
+@{
+    ViewData["Title"] = "Recepten";
+}
+
+<br />
+<h2> Recepten </h2>
+
+
+<table>
+    <tr class="eersteRij">
+        <th class="col0">  </th>
+        <th class="col1"> Gerecht </th>
+        <th class="col0"> Vegetarisch </th>
+        <th class="col1"> Bereidingstijd </th>
+        <th class="col0"> Aantal Ingrediënten </th>
+        <th class="col1"> Bereidingswijze </th>
+        <th class="col0">    </th>
+    </tr>
+
+    @Html.DisplayForModel()
+
+</table>

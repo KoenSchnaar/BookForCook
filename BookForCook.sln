@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookForCook", "BookForCook\BookForCook.csproj", "{8417728B-719A-45A0-BFE2-A1B02AE136E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KookboekDB", "KookboekDB\KookboekDB.csproj", "{70A2BA95-268E-4C3F-96A9-479D49359BC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8417728B-719A-45A0-BFE2-A1B02AE136E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8417728B-719A-45A0-BFE2-A1B02AE136E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8417728B-719A-45A0-BFE2-A1B02AE136E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8417728B-719A-45A0-BFE2-A1B02AE136E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70A2BA95-268E-4C3F-96A9-479D49359BC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70A2BA95-268E-4C3F-96A9-479D49359BC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70A2BA95-268E-4C3F-96A9-479D49359BC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70A2BA95-268E-4C3F-96A9-479D49359BC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C90687AD-F7BB-4A12-B045-D22F41AB18DD}
+	EndGlobalSection
+EndGlobal

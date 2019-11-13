@@ -1,0 +1,12 @@
+﻿@model BookForCook.Models.SearchByIngrediëntModel
+
+<h1>Zoek een recept bij je ingedriënt</h1>
+
+<form asp-action="SearchByIngrediënt">
+
+    <select asp-for="Ingrediënt1" asp-items="Model.Ingrediënten"></select>
+    <select asp-for="Ingrediënt2" asp-items="Model.Ingrediënten"></select>
+    <select asp-for="Ingrediënt3" asp-items="Model.Ingrediënten"></select>
+
+    <button type="submit"> Zoek </button>
+</form>

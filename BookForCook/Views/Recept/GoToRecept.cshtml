@@ -1,0 +1,23 @@
+﻿@model BookForCook.Models.ReceptModel
+
+<h1>@Model.Gerecht</h1>
+
+<div class="flexbox">
+
+    <div class="box1">
+        <h4>Ingrediënten</h4>
+        @foreach(var ingr in Model.Ingrediënten)
+            {
+            <div>@ingr.Ingrediënt @ingr.Hoeveelheid @ingr.Eenheid</div>
+            }
+    </div>
+
+
+
+    <div class="box2">
+        <h4>Bereidingswijze</h4>
+        @Model.Beschrijving
+    </div>
+</div>
+
+
