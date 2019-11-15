@@ -3,22 +3,19 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using BookForCook.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using BookForCook.Models;
+using Shared.Models;
 
 namespace BookForCook.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly IReceptenRepository repo;
 
-        public HomeController(ILogger<HomeController> logger, IReceptenRepository repo)
+        public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            this.repo = repo;
         }
 
         public IActionResult HomePage()

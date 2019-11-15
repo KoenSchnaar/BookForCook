@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\Koen\\source\\repos\\BookForCook\\KookboekDB\\KookboekDB.csproj": {
-                "projectPath": "C:\\Users\\Koen\\source\\repos\\BookForCook\\KookboekDB\\KookboekDB.csproj"
+              "C:\\Users\\Koen\\source\\repos\\BookForCook\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\Koen\\source\\repos\\BookForCook\\Shared\\Shared.csproj"
               }
             }
           }
@@ -45,6 +45,10 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.0.0, )"
@@ -54,6 +58,10 @@
               "version": "[3.0.0, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.0.0, )"
             },
@@ -96,14 +104,14 @@
         }
       }
     },
-    "C:\\Users\\Koen\\source\\repos\\BookForCook\\KookboekDB\\KookboekDB.csproj": {
+    "C:\\Users\\Koen\\source\\repos\\BookForCook\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Koen\\source\\repos\\BookForCook\\KookboekDB\\KookboekDB.csproj",
-        "projectName": "KookboekDB",
-        "projectPath": "C:\\Users\\Koen\\source\\repos\\BookForCook\\KookboekDB\\KookboekDB.csproj",
+        "projectUniqueName": "C:\\Users\\Koen\\source\\repos\\BookForCook\\Shared\\Shared.csproj",
+        "projectName": "Shared",
+        "projectPath": "C:\\Users\\Koen\\source\\repos\\BookForCook\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\Koen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Koen\\source\\repos\\BookForCook\\KookboekDB\\obj\\",
+        "outputPath": "C:\\Users\\Koen\\source\\repos\\BookForCook\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -133,7 +141,29 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[3.0.0, )"
             }
@@ -149,6 +179,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

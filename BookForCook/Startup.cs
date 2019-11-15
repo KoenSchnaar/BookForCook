@@ -12,8 +12,8 @@ using BookForCook.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using BookForCook.Repositories;
-using KookboekDB;
+using Shared;
+using BookForCook.Services;
 
 namespace BookForCook
 {
@@ -30,20 +30,16 @@ namespace BookForCook
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddScoped<IReceptenRepository, ReceptenRepository>();
-            services.AddScoped<IIngriediëntenRepository, IngriediëntenRepository>();
-            services.AddScoped<IGerechtIngrediëntenRepository, GerechtIngrediëntenRepository>();
+            services.AddHttpClient<IIngrediëntenApiService, IngrediëntenApiService>();
+            services.AddHttpClient<IReceptenApiService, ReceptenApiService>();
+            services.AddHttpClient<IGerechtIngrediëntApiService, GerechtIngrediëntApiService>();
 
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection"), sqlOptions => sqlOptions.MigrationsAssembly("BookForCook")));
 
-
-            services.AddDbContext<KookboekContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("KookConnection"), sqlOptions => sqlOptions.MigrationsAssembly("BookForCook")));
-
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
